@@ -14,5 +14,20 @@
       "database_id": "local-only",
       "migrations_dir": "migrations"
     }
-  ]
+  ],
+  "env": {
+    "local": {
+      "vars": {
+        "RATE_LIMIT_DISABLED": "true"
+      },
+      "d1_databases": [
+        {
+          "binding": "DB",
+          "database_name": "bill-splitter",
+          "database_id": "local-only",
+          "migrations_dir": "migrations"
+        }
+      ]
+    }
+  }
 }

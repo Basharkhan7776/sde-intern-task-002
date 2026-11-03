@@ -9,9 +9,11 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.3.4",
     "@tanstack/react-router": "^1.170.46",
     "react": "^19.3.1",
-    "react-dom": "^19.3.1"
+    "react-dom": "^19.3.1",
+    "tailwindcss": "^4.3.4"
   },
   "devDependencies": {
     "@tanstack/router-plugin": "^1.168.48",
