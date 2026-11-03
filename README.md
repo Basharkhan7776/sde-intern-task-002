@@ -154,4 +154,10 @@ You must understand every line you submit. We check this with your video and in 
 4. Record a video of **3 minutes or less** (Loom or unlisted YouTube). Show the architecture, the data flow, and one trade-off you made. Make sure anyone with the link can view it.
 5. Paste the repository link and the video link in the application form.
 
+## Decisions
+
+1. Store money as integer cents so bill splitting never depends on floating-point rounding.
+2. Use a conditional database update and an idempotency key for payments so retries do not charge a share twice.
+3. Keep the web page focused on one home at a time and load bills and member balances from the API, keeping payment state on the server.
+
 We will run `pnpm install && pnpm check && pnpm typecheck && pnpm test` on your repository.
